@@ -1,7 +1,7 @@
 @import '../../../styles/colors';
 @import '../../../styles/variables';
 
-.studentCard {
+%studentCard {
   width: 18%;
   margin: 1%;
   background-color: $gold;
@@ -13,5 +13,40 @@
     img {
       width: 100%;
     }
+  }
+}
+
+.student-gryffindor {
+  @extend %studentCard;
+  h2 {
+  color: $gryffindor
+}
+}
+
+.student-hufflepuff {
+  @extend %studentCard;
+  h2 {
+  color: $hufflepuff
+}
+}
+
+.student-gryffindor {
+  @extend %studentCard;
+  h2 {
+  color: $gryffindor
+}
+}
+
+.student-slytherin {
+  @extend %studentCard;
+  h2 {
+  color: $slytherin
+}
+}
+
+.student-ravenclaw {
+  @extend %studentCard;
+  h2 {
+    color: $ravenclaw;
   }
 }
